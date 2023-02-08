@@ -1,0 +1,43 @@
+#main_container{
+    display: flex;
+}
+
+#left_photo_container{
+    height: 100vh;
+    width: 50vw;
+    background-image: url('../assets/loginPhoto.png');
+}
+
+#right_container{
+    height: 100vh;
+    width: 50vw;
+    background-color: #aa232f;
+}
+
+#content_container{
+    height: 80vh;
+    width: 30vw;
+    margin: 15vh auto;
+}
+
+#login_logo{
+    width: 100%;
+}
+
+#title{
+    font-weight: 600;
+    color: white;
+    font-size:5vw;
+    margin: 0px;
+}
+
+label{
+    color: white;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
