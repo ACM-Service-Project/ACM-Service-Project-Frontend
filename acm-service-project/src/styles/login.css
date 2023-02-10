@@ -41,3 +41,7 @@ label{
     border: none;
     border-radius: 5px;
 }
+
+.register_link{
+    color: 'white';
+}

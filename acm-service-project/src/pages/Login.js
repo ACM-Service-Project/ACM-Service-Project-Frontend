@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import '../styles/login.css';
 import LoginLogo from '../assets/loginLogo.png';
-
 
 function Login(){
     return (
@@ -18,9 +18,9 @@ function Login(){
                         <input type="text" className='input' id='password' placeholder='Password' name='password'/>
                         <button type="submit" id='submit'>LOG IN</button>
                     </form>
-                    {/* <Link to = '/login/register' className='logLink'>
+                    <Link to = '/register' className='register_link'>
                         Sign Up
-                    </Link> */}
+                    </Link>
                 </div>
             </div>
         </div>
