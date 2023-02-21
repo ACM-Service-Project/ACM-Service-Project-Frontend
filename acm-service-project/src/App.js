@@ -8,7 +8,8 @@ import Register from './pages/Register';
 function App() {
   return (
     <Router>
-      <Sidebar />
+      {/* Sidebar will show up when user is logged in */}
+      {/* <Sidebar /> */}
       <Routes>
         <Route path='/' exact element={<Login />} />
         <Route path='/register'register element={<Register />} />

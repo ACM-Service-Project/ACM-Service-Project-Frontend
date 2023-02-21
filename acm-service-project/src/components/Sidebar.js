@@ -12,22 +12,22 @@ import Export from '../assets/export.png';
 function Sidebar(){
     return (
         <div id='sidebar'>
-            <img src={logo} alt='Logo'></img>
-            <img src={familyCrisisCenter} alt='Family Crisis Center'></img>
-            <Link>
-                <img src={home} alt='Home'></img>
+            <img src={logo} alt='Logo' className='sidebar-link'></img>
+            <img src={familyCrisisCenter} alt='Family Crisis Center' className='fcc-title'></img>
+            <Link className='link'>
+                <img src={home} alt='Home' className='sidebar-link'></img>
             </Link>
-            <Link>
-                <img src={search} alt='Search'></img>
+            <Link className='link'>
+                <img src={search} alt='Search' className='sidebar-link'></img>
             </Link>
-            <Link>
-                <img src={profile} alt='Profile'></img>
+            <Link className='link'>
+                <img src={profile} alt='Profile' className='sidebar-link'></img>
             </Link>
-            <Link>
-                <img src={settings} alt='Settings'></img>
+            <Link className='link'>
+                <img src={settings} alt='Settings' className='sidebar-link'></img>
             </Link>
-            <Link>
-                <img src={Export} alt='Export'></img>
+            <Link className='link'>
+                <img src={Export} alt='Export' className='sidebar-link'></img>
             </Link>
         </div>
     );
