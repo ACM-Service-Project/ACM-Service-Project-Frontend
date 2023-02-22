@@ -1,0 +1,8 @@
+#root{
+    display: flex;
+}
+
+.main_container{
+    display: flex;
+    font-family: 'Montserrat';
+}

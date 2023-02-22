@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import '../styles/login.css';
+import '../styles/Login.css';
 import LoginLogo from '../assets/loginLogo.png';
 
 function Login(){
     return (
-        <div id='main_container'>
+        <div className='main_container'>
             <div id='left_photo_container'></div>
             <div id='right_container'>
                 <div id='content_container'>
