@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, withRouter } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
@@ -15,6 +15,7 @@ function App() {
       {/* Sidebar will show up when user is logged in */}
       <Sidebar />
       <Header />
+
       <Routes>
         <Route path='/' exact element={<Login />} />
         <Route path='/register' element={<Register />} />
