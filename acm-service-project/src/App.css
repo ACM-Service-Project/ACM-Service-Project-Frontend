@@ -1,3 +1,10 @@
+#root{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 50px 1fr;
+  gap: 0px;
+}
+
 .App {
   text-align: center;
 }
