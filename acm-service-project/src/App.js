@@ -5,6 +5,9 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
+import Search from './pages/Search';
+import Form from './pages/Form';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <Routes>
         <Route path='/' exact element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/search' element={<Search />} />
+        <Route path='/form' element={<Form />} />
       </Routes>
     </Router>
   );

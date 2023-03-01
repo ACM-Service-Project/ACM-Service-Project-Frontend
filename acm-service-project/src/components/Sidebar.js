@@ -14,13 +14,13 @@ function Sidebar(){
         <div id='sidebar'>
             <img src={logo} alt='Logo' className='sidebar-link'></img>
             <img src={familyCrisisCenter} alt='Family Crisis Center' className='fcc-title'></img>
-            <Link className='link'>
+            <Link to='/dashboard' className='link'>
                 <img src={home} alt='Home' className='sidebar-link'></img>
             </Link>
-            <Link className='link'>
+            <Link to='/search' className='link'>
                 <img src={search} alt='Search' className='sidebar-link'></img>
             </Link>
-            <Link className='link'>
+            <Link to='/form' className='link'>
                 <img src={profile} alt='Profile' className='sidebar-link'></img>
             </Link>
             <Link className='link'>
