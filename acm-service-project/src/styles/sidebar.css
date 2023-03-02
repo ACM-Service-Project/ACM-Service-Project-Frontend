@@ -4,15 +4,15 @@
     background-color: #aa232f;
 }
 
-.link{
-    width: 100px;
-}
-
 .sidebar-link{
     height: 30px;
-    margin-left: 35px;
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.sidebar-link:hover{
+    opacity: 50%;
 }
 
 .fcc-title{

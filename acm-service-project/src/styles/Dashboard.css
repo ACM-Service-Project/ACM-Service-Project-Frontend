@@ -1,0 +1,17 @@
+/* .mainContainer{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    margin: auto;
+} */
+
+.add_person{
+    max-width: 100%;
+    height: auto;
+}
+.check_in{
+    max-width: 100%;
+    height: auto;
+
+}
