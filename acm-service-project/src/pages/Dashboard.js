@@ -6,7 +6,7 @@ import check_in from '../assets/check_in.png'
 function Dashboard(){
     const name = "John";
     return(
-        <div className='mainContainer'>
+        <div className='main_container'>
             <p className='welcome'>Welcome {name}</p>
             <div className='container'>
                 <div>

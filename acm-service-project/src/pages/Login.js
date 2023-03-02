@@ -5,7 +5,7 @@ import LoginLogo from '../assets/loginLogo.png';
 
 function Login(){
     return (
-        <div className='main_container'>
+        <div className='login_container'>
             <div id='left_photo_container'></div>
             <div id='right_container'>
                 <div id='content_container'>
