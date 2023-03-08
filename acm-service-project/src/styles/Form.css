@@ -1,0 +1,36 @@
+.mainContainer{
+    margin: 0 auto;
+}
+fieldset{
+    border-radius: 30%;
+    border-color: gray;
+    border: 5px;
+}
+h3{
+    color: #aa232f;
+    text-align: center;
+}
+.fname{
+    display: inline;
+}
+.lname{
+    display: inline;
+}
+.address{
+    display: block;
+}
+.pnumber{
+    display: block;
+}
+.email{
+    display: block;
+}
+input{
+    background-color: grey;
+}
+#addPerson{
+    border-radius: 10%;
+    background-color: #aa232f;
+    color: white;
+    text-align: center;
+}
