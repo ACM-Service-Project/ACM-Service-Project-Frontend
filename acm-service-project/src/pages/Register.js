@@ -1,11 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+import '../styles/Login.css';
+import LoginLogo from '../assets/loginLogo.png';
 
 function Register(){
     return (
-        <div></div>
+        <div>
+            <div className='left_photo_container'></div>
+            <div className='right_container'>
+                <div className='content_container'>
+                    <img className='login_logo' src={LoginLogo} alt='Family Crisis Center Logo'/>
+                    <p className='title'>FOOD BANK</p>
+                    <form>
+                        <label for='username'>Username</label>
+                        <input type="text" className='input' id='username' placeholder='Username' name='username'/>
+                        <label for='email'>Email</label>
+                        <input type="email" className='email' id='email' placeholder='Email' name='email'/>
+                        <label for='password'>Password</label>
+                        <input type="password" className='input' id='password' placeholder='Password' name='password'/>
+                        <label for='confirm_password'>Confirm Password</label>
+                        <input type="password" className='input' id='confirm_password' placeholder='Confirm Password' name='confirm_password'/>
+                        <button type="submit" id='submit'>Create Account</button>
+                    </form>
+                    <Link to = '/' className='login_link'>
+                        Login
+                    </Link>
+                </div>
+            </div>
+        </div>
     )
 }
 
 export default Register;
 
-// commit testing comment
+// this better work
