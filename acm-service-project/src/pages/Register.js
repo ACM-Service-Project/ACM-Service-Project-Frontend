@@ -5,7 +5,7 @@ import LoginLogo from '../assets/loginLogo.png';
 
 function Register(){
     return (
-        <div>
+        <div className='login_container'>
             <div className='left_photo_container'></div>
             <div className='right_container'>
                 <div className='content_container'>
