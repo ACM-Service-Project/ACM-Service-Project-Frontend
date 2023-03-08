@@ -32,5 +32,3 @@ function Register(){
 }
 
 export default Register;
-
-// this better work
