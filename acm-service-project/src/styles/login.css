@@ -61,6 +61,11 @@ label{
     letter-spacing: 0em;
 }
 
+#submit:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
 .register_link{
     margin-left: 45%;
     text-decoration: none;
