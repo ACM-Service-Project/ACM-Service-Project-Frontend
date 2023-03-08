@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import '../styles/Form.css';
+import '../styles/Sidebar.css';
+import LoginLogo from '../assets/loginLogo.png';
 
 function Form(){
     return(
-        <div className='mainContainer'>
+        <div className='main_container'>
             <fieldset>
                 <h3>ADD NEW PERSON</h3>
                 <form>
