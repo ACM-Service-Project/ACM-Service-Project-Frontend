@@ -8,8 +8,14 @@ import search from '../assets/search.png';
 import profile from '../assets/profile.png';
 import settings from '../assets/settings.png';
 import Export from '../assets/export.png'; 
+import { useLocation } from 'react-router-dom'
 
 function Sidebar(){
+    let location = useLocation();
+    console.log(location)
+    if (location.pathname==='/'){
+        return null;
+    }
     return (
         <div id='sidebar'>
             <img src={logo} alt='Logo' className='sidebar-link'></img>

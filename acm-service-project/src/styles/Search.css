@@ -1,0 +1,111 @@
+.page_title{
+    width: max-content;
+    margin: 50px 40%;
+    color: #EA6165;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.search_bar{
+    width: 70vw;
+    margin: 25px 7%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: #F5F5F5;
+}
+
+.grid-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px;
+    gap: 20px;
+    height: 40px;
+    width: 70vw;
+    margin: auto 5% 20px;
+    text-align: center;
+}
+
+.grid-header{
+    color:#EA6165;
+    font-weight: 700;
+}
+
+.grid-name{
+    grid-column: 1;
+    height: 100%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-visit{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visit-container{
+    margin: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-status{
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-in-btn{
+    height: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #539F25;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.check-in-btn:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.edit-btn{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: none;
+}
+
+.edit-btn:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.delete-btn{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    background-color: #EA6165;
+    border-radius: 10px;
+    border: none;
+}
+
+.delete-btn:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
