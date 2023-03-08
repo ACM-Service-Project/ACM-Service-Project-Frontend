@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 /* .mainContainer{
     grid-column: 2;
     display: flex;
@@ -17,18 +18,32 @@
 }
 
 /* Quote of the Day Banner */
-  .banner_container
-  {
+  .banner_container{
     height: 200px;
     margin: 10px;
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
     justify-content: space-between;
     background: linear-gradient(180deg, #B22024 0%, #EA6165 100%);
     border-radius: 9px;
     color: white;
   }
   
+  .banner_name_container{
+    margin: auto 50px;
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  .welcome{
+    font-family: 'Raleway';
+    font-weight: 100;
+  }
+
+  .banner_name{
+    font-family: 'Raleway';
+  }
+
   .banner_day_container
   {
       display: flex;
@@ -40,7 +55,8 @@
     width: 142px;
     height: 100%;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-right: 10px;
+    text-align: right;
   
     font-family: 'Montserrat';
     font-style: normal;
@@ -71,14 +87,8 @@
   }
   
   #container{
-    padding-right: 10px;
-
+    padding-right: 20px;
     margin: auto;
-  }
-  
-  .banner_quote_container{
-    margin: auto;
-    font-family: 'Raleway';
   }
 
 /*Icons placement*/  
@@ -90,15 +100,21 @@
 }
 
 .check_in_total{
-    grid-column: 4/5;
+    grid-column: 3/4;
 
 }
 .add_person_total{
     grid-column: 2/3;
+}
+.search_dashboard_total{
+  grid-column: 4/5;
 }
 .add_person{
     width: 125px;
 }
 .check_in{
     width: 125px;
+}
+.search_dashboard{
+  width: 125px;
 }
