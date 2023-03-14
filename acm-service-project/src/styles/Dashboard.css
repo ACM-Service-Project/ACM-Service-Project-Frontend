@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 /* .mainContainer{
     grid-column: 2;
     display: flex;
@@ -14,4 +15,108 @@
     max-width: 100%;
     height: auto;
 
+}
+
+/* Quote of the Day Banner */
+  .banner_container{
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #B22024 0%, #EA6165 100%);
+    border-radius: 9px;
+    color: white;
+  }
+  
+  .banner_name_container{
+    margin: auto 50px;
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  .welcome{
+    font-family: 'Raleway';
+    font-weight: 100;
+  }
+
+  .banner_name{
+    font-family: 'Raleway';
+  }
+
+  .banner_day_container
+  {
+      display: flex;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .banner_day_container h2
+  {
+    width: 142px;
+    height: 100%;
+    margin-top: 30px;
+    margin-right: 10px;
+    text-align: right;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 125px;
+    line-height: 152px;
+  }
+  
+  .banner_day_container #month
+  {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+  
+  }
+  
+  .banner_day_container #day
+  {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+  }
+  
+  #container{
+    padding-right: 20px;
+    margin: auto;
+  }
+
+/*Icons placement*/  
+.container{
+    margin-top: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+.check_in_total{
+    grid-column: 3/4;
+
+}
+.add_person_total{
+    grid-column: 2/3;
+}
+.search_dashboard_total{
+  grid-column: 4/5;
+}
+.add_person{
+    width: 125px;
+}
+.check_in{
+    width: 125px;
+}
+.search_dashboard{
+  width: 125px;
 }
