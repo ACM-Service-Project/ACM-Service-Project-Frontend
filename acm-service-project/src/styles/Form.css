@@ -1,0 +1,54 @@
+fieldset{
+    border-radius: 5px;
+    border-color: lightgray;
+    margin: 30px;
+}
+h3{
+    color: #aa232f;
+    text-align: center;
+}
+label{
+    color: black;
+    margin-top: 10px;
+}
+input{
+    background-color: lightgrey;
+    margin: 0;
+    border: none;
+    border-radius: 2px;
+}
+.names{
+    display: flex;
+    gap: 75px;
+}
+.fname{
+    display: inline;
+}
+.lname{
+    display: inline;
+}
+.address{
+    display: block;
+    width: 95%;
+}
+.pnumber{
+    display: block;
+    width: 95%;
+}
+.email{
+    width: 95%;
+    display: block;
+}
+.buttonHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addPerson{
+    border-radius: 10%;
+    background-color: #aa232f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}

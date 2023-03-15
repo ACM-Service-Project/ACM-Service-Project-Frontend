@@ -4,30 +4,30 @@
     display: flex;
 }
 
-#left_photo_container{
+.left_photo_container{
     height: 100vh;
     width: 50vw;
     background-image: url('../assets/loginPhoto.png');
     background-repeat:round;
 }
 
-#right_container{
+.right_container{
     height: 100vh;
     width: 50vw;
     background-color: #aa232f;
 }
 
-#content_container{
+.content_container{
     height: 80vh;
     width: 30vw;
     margin: 15vh auto;
 }
 
-#login_logo{
+.login_logo{
     width: 100%;
 }
 
-#title{
+.title{
     font-weight: 600;
     color: white;
     font-size:5vw;
@@ -61,12 +61,7 @@ label{
     letter-spacing: 0em;
 }
 
-#submit:hover{
-    cursor: pointer;
-    opacity: 50%;
-}
-
-.register_link{
+.login_link{
     margin-left: 45%;
     text-decoration: none;
     font-weight: 700;
