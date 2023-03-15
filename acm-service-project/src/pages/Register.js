@@ -3,6 +3,30 @@ import { Link } from 'react-router-dom'
 import '../styles/Register.css';
 import LoginLogo from '../assets/loginLogo.png';
 
+async function handleSubmit(e){
+    e.preventDefault();
+    let form = e.target;
+    
+    let body = {
+        firstName: form.firstname.value,
+        lastName: form.lastname.value,
+        username: form.username.value,
+        phone: form.phonenumber.value,
+        email: form.email.value
+    }
+    await fetch("http://localhost:8000/users/addUser", {
+        method: "POST",
+        headers: {
+            'Content-Type': "application/json",
+            'Cache-Control': 'no-cache',
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip,deflate,br',
+            'Connection': 'keep-alive'
+        },
+        body:  JSON.stringify(body)
+    })
+}
+
 function Register(){
     return (
         <div className='login_container'>
@@ -11,7 +35,7 @@ function Register(){
                 <div className='content_container'>
                     <img className='login_logo' src={LoginLogo} alt='Family Crisis Center Logo'/>
                     <p className='title'>FOOD BANK</p>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <label for='firstname'>First Name</label>
                         <input type="text" className='input' id='firstname' placeholder='First Name' name='firstname'/>
 
