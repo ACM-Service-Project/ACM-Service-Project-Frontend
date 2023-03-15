@@ -3,9 +3,8 @@ import '../styles/Header.css';
 import profilePic from '../assets/defaultProfile.png';
 import { useLocation } from 'react-router-dom'
 
-function Header(props){
+function Header(){
     let location = useLocation();
-    console.log(location)
     if (location.pathname==='/'){
         return null;
     }

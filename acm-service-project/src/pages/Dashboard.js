@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import '../styles/Dashboard.css';
 import add_person from '../assets/add_person.png';
 import check_in from '../assets/check_in.png';
