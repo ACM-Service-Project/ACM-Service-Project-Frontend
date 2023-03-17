@@ -18,10 +18,6 @@ async function handleSubmit(e){
         method: "POST",
         headers: {
             'Content-Type': "application/json",
-            'Cache-Control': 'no-cache',
-            'Accept': '*/*',
-            'Accept-Encoding': 'gzip,deflate,br',
-            'Connection': 'keep-alive'
         },
         body:  JSON.stringify(body)
     })

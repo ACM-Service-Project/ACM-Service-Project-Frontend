@@ -103,13 +103,15 @@
 
 .check_in_total{
     grid-column: 3/4;
-
 }
 .add_person_total{
     grid-column: 2/3;
 }
 .search_dashboard_total{
   grid-column: 4/5;
+}
+.check_in_total, .add_person_total, .search_dashboard_total{
+  text-decoration: none;
 }
 .add_person{
     width: 125px;

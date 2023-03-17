@@ -1,30 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SearchItem from '../components/SearchItem';
 import '../styles/Search.css';
 
 function Search(){
+    const [patronList, setPatronList]=useState(null);
+
+    async function handleChange(e){
+        let body={
+            firstName: e.target.value
+        }
+        let res = await fetch("http://localhost:8000/patrons/searchPatrons", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body:  JSON.stringify(body)
+        })
+        console.log('waiting for response');
+        res=await res.json();
+        let patronListArray= res.map((patron)=>{
+            return (
+                <SearchItem 
+                    name={patron.firstName+' '+patron.lastName}
+                    visit='MM/DD/YYYY'
+                />
+            )
+        });
+        setPatronList(patronListArray)
+        console.log(res)
+    }
     return(
         <div className='main_container'>
             <h1 className='page_title'>FIND PERSON</h1>
-            <input className='search_bar' name='search_bar' type='text' placeholder='Search'></input>
+            <input onChange={handleChange} className='search_bar' name='search_bar' type='text' placeholder='Search'></input>
             <div className='results'>
                 <div className='grid-item'>
                     <p className='grid-name grid-header'>NAME</p>
                     <p className='grid-visit grid-header'>LAST VISIT</p>
                     <p className='grid-status grid-header'>STATUS</p>
                 </div>
-                <SearchItem
-                    name='Alex Berryhill'
-                    visit='MM/DD/YYYY'
-                />
-                <SearchItem
-                    name='John Doe'
-                    visit='MM/DD/YYYY'
-                />
-                <SearchItem
-                    name='Jane Doe'
-                    visit='MM/DD/YYYY'
-                />
+                {patronList}
             </div>
         </div>
     );
