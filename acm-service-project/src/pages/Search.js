@@ -9,9 +9,9 @@ function Search(){
             <input className='search_bar' name='search_bar' type='text' placeholder='Search'></input>
             <div className='results'>
                 <div className='grid-item'>
-                    <p className='grid-name grid-header'>NAME</p>
-                    <p className='grid-visit grid-header'>LAST VISIT</p>
-                    <p className='grid-status grid-header'>STATUS</p>
+                    <p className='grid-name grid-head'>NAME</p>
+                    <p className='grid-visit grid-head'>LAST VISIT</p>
+                    <p className='grid-status grid-head'>STATUS</p>
                 </div>
                 <SearchItem
                     name='Alex Berryhill'
