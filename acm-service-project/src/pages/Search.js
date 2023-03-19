@@ -4,7 +4,16 @@ import '../styles/Search.css';
 
 function Search(){
     const [patronList, setPatronList]=useState(null);
+    const [modalIsOpen, setModalIsOpen] = useState('modal')
 
+    function openModal(){
+        console.log('in')
+        setModalIsOpen('modal')
+    }
+
+    const closeModal =()=>{
+        setModalIsOpen('hide')
+    }
     async function handleChange(e){
         let body={
             firstName: e.target.value
@@ -23,11 +32,11 @@ function Search(){
                 <SearchItem 
                     name={patron.firstName+' '+patron.lastName}
                     visit='MM/DD/YYYY'
+                    openModal={openModal}
                 />
             )
         });
         setPatronList(patronListArray)
-        console.log(res)
     }
     return(
         <div className='main_container'>
@@ -40,6 +49,22 @@ function Search(){
                     <p className='grid-status grid-header'>STATUS</p>
                 </div>
                 {patronList}
+            </div>
+            <div className={modalIsOpen}>
+                <div className="greyX_icon">
+                    <p className="union">X</p>
+                </div>
+                <p className="delete_text">
+                    Are you sure you want to delete this person?
+                </p>
+                <div className="delete_button_box">
+                    <button onClick={closeModal} className="delete_back">
+                        Back
+                    </button>
+                    <button className="delete_button">
+                        Delete
+                    </button>
+                </div>
             </div>
         </div>
     );
