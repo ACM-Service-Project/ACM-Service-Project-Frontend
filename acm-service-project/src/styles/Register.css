@@ -48,7 +48,7 @@ label{
 }
 
 #submit{
-    margin-left: 30%;
+   
     margin-bottom: 10px;
     background-color: #EA6165;
     width: 50%;
@@ -62,11 +62,12 @@ label{
     letter-spacing: 0em;
 }
 
-.login_link{
-    margin-left: 45%;
-    text-decoration: none;
+.link{
+    text-decoration-color:#f6d74e;
     font-weight: 700;
-    color: white;
+    color:#f6d74e;
+
+    
 }
 
 #firstname, #lastname {

@@ -12,15 +12,18 @@ function Login(){
                     <img id='login_logo' src={LoginLogo} alt='Family Crisis Center Logo'/>
                     <p id='title'>FOOD BANK</p>
                     <form>
-                        <label for='username'>Username</label>
+                        
                         <input type="text" className='input' id='username' placeholder='Username' name='username'/>
-                        <label for='password'>Password</label>
+            
                         <input type="text" className='input' id='password' placeholder='Password' name='password'/>
                         <button type="submit" id='submit'>LOG IN</button>
                     </form>
-                    <Link to = '/register' className='register_link'>
+                    <div className='register_link'>
+                        <p>Don't have an account? </p>
+                    <Link to = '/register' className='link' >
                         Sign Up
                     </Link>
+                    </div>
                 </div>
             </div>
         </div>
