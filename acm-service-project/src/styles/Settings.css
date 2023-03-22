@@ -1,0 +1,55 @@
+#settings_container {
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+#settings-info {
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#page_title{
+    color: #EA6165;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+#settings-info-header p {
+    font-size: 20px;
+    margin: 0;
+}
+
+#settings-info-grid {
+    text-align: left;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 30px;
+}
+
+#settings-info-grid h2, #settings-info-grid p {
+    margin: 0 0 5px 0;
+}
+
+#settings-info-grid div {
+    margin-bottom: 30px;
+}
+
+#profile{
+    max-width: 100%;
+    height: auto;
+    width: 125px;
+}
+
+#button-edit {
+    border-radius: 10px;
+    background-color: #aa232f;
+    color: white;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+    margin-top: 10px;
+}
