@@ -5,7 +5,6 @@
     font-size: 20px;
     font-family: 'Montserrat';
 }
-
 .search_bar{
     width: 70vw;
     margin: 25px 7%;
@@ -15,9 +14,9 @@
     background-color: #F5F5F5;
 }
 
-.grid-item{
+.grid-header{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 40px;
     gap: 20px;
     height: 40px;
@@ -26,62 +25,48 @@
     text-align: center;
 }
 
-.grid-head{
-    color:#EA6165;
-    font-weight: 700;
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px;
+    gap: 20px;
+    height: 40px;
+    width: 70vw;
+    margin: auto 5% 20px;
+    text-align: center;
 }
-
-.grid-name{
+.grid-names{
     grid-column: 1;
     height: 100%;
     margin: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.grid-visit{
+.grid-email{
     grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.visit-container{
+    height: 100%;
     margin: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 40px;
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.grid-status{
+.grid-phone{
     grid-column: 3;
-    display: flex;
+    height: 100%;
+    margin: 0%;
     justify-content: center;
     align-items: center;
 }
 
-.check-in-btn{
-    height: 40px;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: #539F25;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    font-weight: 700;
+.grid-address{
+    grid-column: 4;
+    height: 100%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
 }
-
-.check-in-btn:hover{
-    cursor: pointer;
-    opacity: 50%;
+.grid-status{
+    grid-column: 5;
 }
-
 .edit-btn{
     height: 40px;
     width: 40px;
@@ -108,33 +93,4 @@
 .delete-btn:hover{
     cursor: pointer;
     opacity: 50%;
-}
-
-/* Edit Form */
-
-.edit-form{
-    display: grid;
-    column-gap: 30px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.edit-form input{
-    width: 100%;
-    margin: 10px 0px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid grey;
-    background-color: #F5F5F5;
-}
-
-.edit-form .first-name{
-    grid-column: 1;
-}
-
-.edit-form .last-name{
-    grid-column: 2;
-}
-
-.edit-form .form-input{
-    grid-column: 1/3;
 }

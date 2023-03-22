@@ -179,9 +179,9 @@ function Search(){
             {/* Render a div element that displays the search results as a grid of patron information. */}
             <div className='results'>
                 <div className='grid-item'>
-                    <p className='grid-name grid-header'>NAME</p>
-                    <p className='grid-visit grid-header'>LAST VISIT</p>
-                    <p className='grid-status grid-header'>STATUS</p>
+                    <p className='grid-name grid-head'>NAME</p>
+                    <p className='grid-visit grid-head'>LAST VISIT</p>
+                    <p className='grid-status grid-head'>STATUS</p>
                 </div>
                 {patronList}
             </div>

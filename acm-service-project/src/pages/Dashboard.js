@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom';
+
 import '../styles/Dashboard.css';
 import add_person from '../assets/add_person.png';
 import check_in from '../assets/check_in.png';
