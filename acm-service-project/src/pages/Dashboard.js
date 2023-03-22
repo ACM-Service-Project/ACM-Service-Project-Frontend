@@ -6,7 +6,6 @@ import check_in from '../assets/check_in.png';
 import search_dashboard from'../assets/search_dashboard.png';
 
 function Dashboard(){
-    // const [quote, setQuote] = useState([])
     const name = "John";
 
     //get the Date 

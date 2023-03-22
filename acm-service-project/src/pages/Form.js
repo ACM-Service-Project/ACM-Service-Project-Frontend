@@ -10,7 +10,7 @@ async function handleSubmit(e){
     let body = {
         firstName: form[0].value,
         lastName: form[1].value,
-        // address: form.address.value,
+        address: form.address.value,
         phone: form.pNumber.value,
         email: form.email.value
     }

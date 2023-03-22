@@ -17,6 +17,11 @@
 
     font-family: 'Raleway';
 }
+
+.edit-modal{
+    width: 70vw;
+    height: 50vh;
+}
   
 .modal_close{
     color: #888888;
