@@ -109,3 +109,32 @@
     cursor: pointer;
     opacity: 50%;
 }
+
+/* Edit Form */
+
+.edit-form{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.edit-form input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: #F5F5F5;
+}
+
+.edit-form .first-name{
+    grid-column: 1;
+}
+
+.edit-form .last-name{
+    grid-column: 2;
+}
+
+.edit-form .form-input{
+    grid-column: 1/3;
+}
