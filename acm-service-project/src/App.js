@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Search from './pages/Search';
 import Form from './pages/Form';
+import Settings from './pages/Settings';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/search' element={<Search />} />
         <Route path='/form' element={<Form />} />
+        <Route path='/settings' element={<Settings />} />
       </Routes>
     </Router>
   );
