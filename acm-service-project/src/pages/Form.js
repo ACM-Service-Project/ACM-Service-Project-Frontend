@@ -21,9 +21,21 @@ async function handleSubmit(e){
         },
         body:  JSON.stringify(body)
     })
+    setFirstName(form[0].value);
+    setLastName(form[1].value);
+    openModal();
 }
 
 function Form(){
+    const [modelIsOpen, setModalIsOpen] = useState(false);
+    const [firstName, setFirstName]=useState(null);
+    const [lastName, setLastName]=useState(null);
+    function openModal(){
+        setModalIsOpen(true)
+    }
+    const closeModal =()=>{
+        setModalIsOpen(false)
+    }
     return(
         <div className='main_container'>
             <fieldset>
@@ -48,6 +60,19 @@ function Form(){
                 
                 
             </fieldset>
+            <Modal className='modal edit-modal' isOpen={modalIsOpen} ariaHideApp={false}>
+                <div className='message_container'>
+                    <div className='icon_container'>
+                        <image className='check'></image>
+                    </div>
+                    <img className='check' src='../assets/check_mark.png' alt="Add person"></img>
+                    <p>{firstName} {lastName} was added to the directory.</p>
+                    <div className='button_holder'>
+                        <button className='back' onClick={closeModal}>Go Back</button>
+                        <button className='add_another_person'>Add Person</button>
+                    </div>
+                </div>
+            </Modal>
         </div>
     );
 }

@@ -56,3 +56,43 @@ input{
     cursor: pointer;
     opacity: 80%;
 }
+
+/*CSS for modal popup*/
+.icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check{
+    box-sizing: border-box;
+    position: absolute;
+    left: 54.22%;
+    right: 40%;
+    top: 34.5%;
+    bottom: 56.61%;
+
+    /* success */
+    background: #89D17E;
+
+    /* success */
+    border: 1px solid #89D17E;
+    border-radius: 53px;
+}
+p{
+    size: 1.5rem;
+}
+.button_holder{
+    display: flex;
+}
+.back{
+    border: 1px solid #aa232f;
+    border-radius: 10%;
+    color: #aa232f;
+    background-color: white;
+}
+.add_another_person{
+    border: 1px solid #aa232f;
+    border-radius: 10%;
+    color: white;
+    background-color: #aa232f;
+}
