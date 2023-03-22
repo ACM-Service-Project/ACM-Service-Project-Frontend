@@ -7,8 +7,8 @@
 .sidebar-link{
     height: 30px;
     margin-left: 30px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .sidebar-link:hover{
@@ -16,6 +16,61 @@
 }
 
 .fcc-title{
-    width: 100%;
-    margin-bottom: 40px;
+    width: 75%;
+    margin-top: -20px;
+    margin-bottom: 70px;
+    padding-left: 13px;
+    
+}
+.logo{
+    margin-top: 40px;
+}
+.home_img{
+    width: 20%;
+    margin-top: -20px;
+    margin-bottom: 90px;
+    padding-left: 20px;
+} 
+
+.check_img{
+    height: 10px;
+    margin-top: -20px;
+    margin-bottom: 90px;
+    padding-left: 15px;
+}
+.profile_img
+{
+    width: 20%;
+    margin-top: -20px;
+    margin-bottom: 90px;
+    padding-left: 15px;
+} 
+.settings_img
+{
+    width: 20%;
+    margin-top: -20px;
+    margin-bottom: 90px;
+    padding-left: 15px;
+}
+ .export_img{
+    width: 20%;
+    margin-top: -20px;
+    margin-bottom: 90px;
+    padding-left: 15px;
+ }
+ .link{
+    display: flex;
+    align-items: baseline;
+    padding-right: 50px;
+ }
+ .sidebar_a{
+    margin-left: 10px;
+    font-size:  10px;
+    text-decoration: white;
+}
+a:link{
+    text-decoration: none;
+}
+a{
+    color: white;
 }
