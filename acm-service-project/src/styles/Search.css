@@ -15,7 +15,7 @@
     background-color: #F5F5F5;
 }
 
-.grid-item{
+.search-item{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 40px;
@@ -26,12 +26,12 @@
     text-align: center;
 }
 
-.grid-head{
+.search-head{
     color:#EA6165;
     font-weight: 700;
 }
 
-.grid-name{
+.search-name{
     grid-column: 1;
     height: 100%;
     margin: 0%;
@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-.grid-visit{
+.search-visit{
     grid-column: 2;
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@
     align-items: center;
 }
 
-.grid-status{
+.search-status{
     grid-column: 3;
     display: flex;
     justify-content: center;

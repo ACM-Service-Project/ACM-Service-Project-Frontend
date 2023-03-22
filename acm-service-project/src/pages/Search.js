@@ -176,12 +176,12 @@ function Search(){
             <h1 className='page_title'>FIND PERSON</h1>
             {/* Render an input element that triggers the handleChange function when the user types in it. */}
             <input onChange={handleChange} className='search_bar' name='search_bar' type='text' placeholder='Search'></input>
-            {/* Render a div element that displays the search results as a grid of patron information. */}
+            {/* Render a div element that displays the search results as a search of patron information. */}
             <div className='results'>
-                <div className='grid-item'>
-                    <p className='grid-name grid-head'>NAME</p>
-                    <p className='grid-visit grid-head'>LAST VISIT</p>
-                    <p className='grid-status grid-head'>STATUS</p>
+                <div className='search-item'>
+                    <p className='search-name search-head'>NAME</p>
+                    <p className='search-visit search-head'>LAST VISIT</p>
+                    <p className='search-status search-head'>STATUS</p>
                 </div>
                 {patronList}
             </div>
