@@ -5,14 +5,14 @@ import '../styles/SearchModal.css'
 
 function SearchItem({name, visit, checkIn, openDeleteModal, openEditModal}){
     return(
-        <div className="grid-item">
-            <p className="grid-name">{name}</p>
-            <div className="grid-visit">
+        <div className="search-item">
+            <p className="search-name">{name}</p>
+            <div className="search-visit">
                 <p className="visit-container">
                     Last Visit: {visit}
                 </p>
             </div>
-            <div className="grid-status">
+            <div className="search-status">
                 <button onClick={checkIn} className="check-in-btn">Check In</button>
                 <button type="button" onClick={openEditModal} className="edit-btn">
                     <img src={editImg} alt='edit'></img>
