@@ -9,7 +9,7 @@ function Settings() {
                 <h1 id='page_title'>Profile Settings</h1>
                 <section id='settings-info'>
                     <div id='settings-info-header'>
-                        <img id='profile' src={profile} alt="Profile Picture"></img>
+                        <img id='profile' src={profile} alt="Profile Pic"></img>
                         <p>John Doe</p>
                     </div>
                     <section id='settings-info-grid'>

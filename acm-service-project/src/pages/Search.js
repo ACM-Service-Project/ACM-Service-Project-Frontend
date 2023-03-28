@@ -18,7 +18,6 @@ async function checkIn(patronId){
         },
         body: JSON.stringify(body)
     })
-    console.log('hit')
 }
 
 // Search component

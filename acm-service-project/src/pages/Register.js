@@ -11,6 +11,7 @@ async function handleSubmit(e){
         firstName: form.firstname.value,
         lastName: form.lastname.value,
         username: form.username.value,
+        password: form.password.value,
         phone: form.phonenumber.value,
         email: form.email.value
     }
@@ -55,7 +56,7 @@ function Register(){
 
                         <button type="submit" id='submit'>Create Account</button>
                     </form>
-                    <Link to = '/' className='login_link'>
+                    <Link to = '/login' className='login_link'>
                         Login
                     </Link>
                 </div>

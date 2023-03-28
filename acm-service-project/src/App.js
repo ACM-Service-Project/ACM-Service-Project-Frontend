@@ -1,19 +1,32 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
+// Components
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+// Pages
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Search from './pages/Search';
 import Form from './pages/Form';
-
 import Directory from './pages/Directory';
 import Settings from './pages/Settings';
+import NotFound from './pages/NotFound';
+import Logout from './pages/Logout';
+// routes
+import ProtectedRoute from './utils/ProtectedRoute';
 
 
 function App() {
+  const [user, setUser] = React.useState('null');
+  
+  React.useEffect(() => {
+    setUser(JSON.parse(localStorage.getItem('user')));
+  
+  }, [localStorage.getItem('user')]);
+
   return (
     <Router>
       {/* Sidebar will show up when user is logged in */}
@@ -21,16 +34,24 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path='/' exact element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/search' element={<Search />} />
-        <Route path='/form' element={<Form />} />
+        {/* Pages accessable at all times */}
+        <Route path="/" element={<Dashboard />} />
+        <Route path="*" element={<NotFound />} />
 
-        <Route path='/directory' element={<Directory />} />
+        {/* Pages only accessed by un logged in users */}
+        <Route element={<ProtectedRoute isAllowed={user===null} redirectPath='/' />}>
+          <Route path='/login' exact element={<Login />} />
+          <Route path='/register' element={<Register />} />
+        </Route>
 
-        <Route path='/settings' element={<Settings />} />
-
+        {/* Pages only accessed by logged in users */}
+        <Route element={<ProtectedRoute isAllowed={!!user} />}>
+          <Route path="/search" element={<Search />} />
+          <Route path='/form' element={<Form />} />
+          <Route path='/directory' element={<Directory />} />
+          <Route path='/settings' element={<Settings />} />
+          <Route path='/logout' element={<Logout />} />
+        </Route>  
       </Routes>
     </Router>
   );

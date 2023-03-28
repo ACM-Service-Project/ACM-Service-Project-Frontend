@@ -12,14 +12,15 @@ import { useLocation } from 'react-router-dom'
 
 function Sidebar(){
     let location = useLocation();
-    if (location.pathname==='/'){
+    if (location.pathname==='/login' || location.pathname==='/register'){
         return null;
     }
+
     return (
         <div id='sidebar'>
             <img src={logo} alt='Logo' className='sidebar-link'></img>
             <img src={familyCrisisCenter} alt='Family Crisis Center' className='fcc-title'></img>
-            <Link to='/dashboard' className='link'>
+            <Link to='/' className='link'>
                 <img src={home} alt='Home' className='sidebar-link'></img>
             </Link>
             <Link to='/search' className='link'>
@@ -31,7 +32,7 @@ function Sidebar(){
             <Link className='link'>
                 <img src={settings} alt='Settings' className='sidebar-link'></img>
             </Link>
-            <Link className='link'>
+            <Link onClick={()=>window.location.href='/logout'} className='link'>
                 <img src={Export} alt='Export' className='sidebar-link'></img>
             </Link>
         </div>
