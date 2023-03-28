@@ -1,7 +1,6 @@
 .login_container{
-    grid-row: 1 / 3;
-    grid-column: 1 / 3;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1f 1fr;
 }
 
 #left_photo_container{
@@ -15,60 +14,70 @@
     height: 100vh;
     width: 50vw;
     background-color: #aa232f;
+    
+ 
 }
 
 #content_container{
-    height: 80vh;
+    height: 0vh;
     width: 30vw;
     margin: 15vh auto;
+    
 }
 
 #login_logo{
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  
+  
 }
 
 #title{
-    font-weight: 600;
+    font-weight: 100;
+    letter-spacing: 15px;
     color: white;
-    font-size:5vw;
-    margin: 0px;
+    font-size:2.5vw;
+    margin-top: 10px;
+    margin-bottom: 60px ;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
-label{
-    color: white;
-}
 
 .input{
-    margin-bottom: 25px;
+    height: 40px;
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
+    background-color: white;
 }
 
-#submit{
-    margin-left: 30%;
-    margin-bottom: 10px;
-    background-color: #EA6165;
-    width: 50%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23px;
-    letter-spacing: 0em;
+
+
+button#submit{
+    
+    width: 105%;
+    height: 60px;
 }
 
 #submit:hover{
     cursor: pointer;
     opacity: 50%;
+    
 }
 
 .register_link{
-    margin-left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     text-decoration: none;
     font-weight: 700;
     color: white;
+    text-decoration-color: rgb(255, 158, 158);
+   
+  
 }
