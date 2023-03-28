@@ -18,13 +18,14 @@ import Logout from './pages/Logout';
 // routes
 import ProtectedRoute from './utils/ProtectedRoute';
 
-
 function App() {
+  // set user state
   const [user, setUser] = React.useState('null');
   
+  // fetch user from localStorage on page load
   React.useEffect(() => {
     setUser(JSON.parse(localStorage.getItem('user')));
-  
+    // eslint-disable-next-line
   }, [localStorage.getItem('user')]);
 
   return (
@@ -34,17 +35,17 @@ function App() {
       <Header />
 
       <Routes>
-        {/* Pages accessable at all times */}
+        {/* Pages accessible at all times */}
         <Route path="/" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
 
-        {/* Pages only accessed by un logged in users */}
+        {/* Pages only accessed by un-logged in users */}
         <Route element={<ProtectedRoute isAllowed={user===null} redirectPath='/' />}>
           <Route path='/login' exact element={<Login />} />
           <Route path='/register' element={<Register />} />
         </Route>
 
-        {/* Pages only accessed by logged in users */}
+        {/* Pages only accessed by logged-in users */}
         <Route element={<ProtectedRoute isAllowed={!!user} />}>
           <Route path="/search" element={<Search />} />
           <Route path='/form' element={<Form />} />
