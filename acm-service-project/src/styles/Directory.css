@@ -18,27 +18,28 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 40px;
-    gap: 20px;
+    /* gap: 4vw; */
     height: 40px;
     width: 70vw;
     margin: auto 5% 20px;
     text-align: center;
 }
-
 .grid-item{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 40px;
-    gap: 20px;
     height: 40px;
     width: 70vw;
     margin: auto 5% 20px;
     text-align: center;
+    margin-bottom: 7vh;
 }
 .grid-names{
     grid-column: 1;
     height: 100%;
     margin: 0%;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-email{
@@ -93,4 +94,92 @@
 .delete-btn:hover{
     cursor: pointer;
     opacity: 50%;
+}
+
+@media only screen and (max-width: 600px){
+    .main_container{
+        font-size: 3vw;
+    }
+    .grid-header{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 40px;
+        /* gap: 20px; */
+        height: 40px;
+        width: 70vw;
+        margin: auto 5% 20px;
+        text-align: center;
+    }
+    .grid-names{
+        grid-column: 1;
+        height: 100%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        width: 10vw;
+    }
+    
+    .grid-email{
+        grid-column: 2;
+        height: 100%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        max-width: 10vw;
+        overflow-wrap:break-word;
+    }
+    
+    .grid-phone{
+        grid-column: 3;
+        height: 100%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        max-width: 11vw;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-address{
+        grid-column: 4;
+        height: 100%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        max-width: 13vw;
+    }
+    .grid-status{
+        display: flex;
+        grid-column: 5;
+        max-width: 10vw;
+        margin-right: 2vw;
+    }
+
+    .grid-item{
+        /* margin-bottom: 10vh; */
+        width: 50vw;
+    }
+    .delete-btn{
+        height: 3vh;;
+        width: 3vh;
+        margin: 3px;
+        background-color: #EA6165;
+        border-radius: 30%;
+        border: none;
+    }
+    .delete-btn img{
+        max-width: 2vh;
+        max-height: 2vh;
+    }
+    .edit-btn{
+        height: 3vh;;
+        width: 3vh;
+        margin-left: 5px;
+        background-color: #D9D9D9;
+        border-radius: 30%;
+        border: none;
+    }
+    .edit-btn img{
+        max-width: 2vh;
+        max-height: 2vh;
+    }
 }
