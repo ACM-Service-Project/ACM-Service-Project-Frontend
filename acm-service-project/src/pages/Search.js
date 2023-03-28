@@ -1,5 +1,23 @@
-// Importing necessary modules
+/*Author: Alexander Berryhill
+ * 
+ * This component is a React component that includes functions to 
+ * search for a patron, check in a patron, edit a patron's information, 
+ * and delete a patron. The component imports the necessary modules 
+ * and two child components, SearchItem and Modal, and defines state 
+ * variables to be used in the component. The checkIn function makes 
+ * a post request to add a visit for a patron. The component includes 
+ * several functions to manage the opening and closing of modal windows, 
+ * including a delete confirmation modal and an edit patron modal. The 
+ * deletePatron function makes a delete request to remove a patron from 
+ * the database and then reloads the page. The editPatron function makes 
+ * a patch request to update a patron's information and then reloads the 
+ * page. The fillSearchItems function retrieves the last visit for each 
+ * patron and creates a list of SearchItem components. The handleChange 
+ * function handles changes to the search bar input and sends a post 
+ * request to the server to search for patrons.
+ */
 
+// Importing necessary modules
 import React, { useState } from 'react';
 import SearchItem from '../components/SearchItem';
 import Modal from "react-modal"
@@ -18,7 +36,6 @@ async function checkIn(patronId){
         },
         body: JSON.stringify(body)
     })
-    console.log('hit')
 }
 
 // Search component
