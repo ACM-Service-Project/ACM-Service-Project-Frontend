@@ -1,3 +1,20 @@
+/* Author: Alexander Berryhill
+ * 
+ * The code imports React and other necessary components and assets, 
+ * including the useLocation hook from react-router-dom. The Sidebar 
+ * function component is defined, which renders a sidebar menu.
+ * 
+ * The useLocation hook is used to get the current location. If the 
+ * current location is the login or register page, the sidebar is not 
+ * displayed, and null is returned.
+ * 
+ * Otherwise, the sidebar is displayed with the logo, the name of the 
+ * app, and several links to different pages in the app. The last link 
+ * is for logging out, and clicking on it will redirect the user to the 
+ * logout page.
+ */
+
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Sidebar.css';
@@ -15,17 +32,23 @@ import PersonIcon from '@mui/icons-material/Person';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 function Sidebar(){
+    // Get the current location using the useLocation hook from react-router-dom
     let location = useLocation();
-    if (location.pathname==='/'){
+    // If the current location is the login or register page, return null to not display the sidebar
+    if (location.pathname==='/login' || location.pathname==='/register'){
         return null;
     }
+
+    // Otherwise, display the sidebar
     return (
         <div id='sidebar'>
             <div className='side-logo'>
             <img src={logo} alt='Logo' className='sidebar-link'></img>
+
             </div>  
             <Link to='/dashboard' className='link'>
                 <HomeIcon/><p>Home</p>
+
             </Link>
             <Link to='/search' className='link'>
                 <SearchIcon/><p>Directory</p>
@@ -33,6 +56,7 @@ function Sidebar(){
             <Link to='/form' className='link'>
                 <PersonIcon/><p>Check-In</p>
             </Link>
+
             <Link className='link'>
                 <SettingsIcon/><p>Settings</p>
             </Link>
