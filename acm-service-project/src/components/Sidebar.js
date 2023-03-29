@@ -49,7 +49,7 @@ function Sidebar(){
             <Link to='/form' className='link'>
                 <img src={profile} alt='Profile' className='sidebar-link'></img>
             </Link>
-            <Link className='link'>
+            <Link to='/settings' className='link'>
                 <img src={settings} alt='Settings' className='sidebar-link'></img>
             </Link>
             <Link onClick={()=>window.location.href='/logout'} className='link'>

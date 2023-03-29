@@ -1,4 +1,4 @@
-/* Author: Alexander Berryhill, Alexis 
+/* Author: Alexander Berryhill, Alexis Rudy
  *
  * This is a React component for a form that allows the user to 
  * add a new person to a directory. It uses useState to manage 

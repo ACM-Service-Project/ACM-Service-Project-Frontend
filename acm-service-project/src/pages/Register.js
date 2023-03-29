@@ -1,4 +1,4 @@
-/* Authors: Alexander Berryhill
+/* Authors: Alexander Berryhill, Jacob Brooks
  * 
  * This is a React component for a registration form. It imports the Link component from 
  * react-router-dom for navigating to the login page, and an image file for the logo.

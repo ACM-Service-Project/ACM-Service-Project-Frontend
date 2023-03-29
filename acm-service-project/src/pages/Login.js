@@ -1,5 +1,5 @@
-/* Author: Alexander Berryhill, Lesilee Cruz
- *
+/* Authors: Alexander Berryhill, Lesilee Cruz
+ * 
  * The Login component is a React component that displays a login 
  * form to the user. When the user submits the form, the component 
  * sends a POST request to the backend API with the user's login 
@@ -7,7 +7,6 @@
  * local storage. The component also includes a link to a 
  * registration page for new users.
  */
-
 
 // Import the React library and the Link component from React Router
 import React from 'react';
