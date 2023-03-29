@@ -75,6 +75,7 @@ function Form(){
                     <label className='address'>Address</label><input type='text' name='address' className='address'></input>
                     <label className='pnumber'>Phone Number</label><input type='tel' name='pNumber' className='pnumber'></input>
                     <label className='email'>Email</label><input type='email' name='email' className='email'></input>
+                    <label className='age'>Age</label><input type='number' name='age' className='age'></input>
                     <div className='buttonHolder'>
                         <button className='addPerson' type='submit'>ADD</button>
                     </div>
