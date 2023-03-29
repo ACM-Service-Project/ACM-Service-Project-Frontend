@@ -26,8 +26,10 @@ function Dashboard(){
 
     return(
         <div className='main_container'>
+
             {/* banner section */}
             <section className='banner_container'>
+
                 <div className='banner_name_container'>
                     <span className='welcome'>Welcome </span>
                     <span className='banner_name'>{name}</span>
@@ -40,8 +42,10 @@ function Dashboard(){
                         <p id="day">{days[dt.getDay()]}</p> 
                     </div>
                 </div>
+
             </section>
             {/* links to different pages */}
+
             <div className='container'>
                 <Link to='/form' className='add_person_total' >
                     <img className='add_person' src={add_person} alt="Add person"></img>

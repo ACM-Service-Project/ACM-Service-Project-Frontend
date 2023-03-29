@@ -60,9 +60,11 @@ function Login(){
                     </form>
                     <div className='register_link'>
                         <p>Don't have an account? </p>
+
                         <Link to = '/register' className='link' >
                             Sign Up
                         </Link>
+
                     </div>
                 </div>
             </div>

@@ -18,15 +18,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Sidebar.css';
-import logo from '../assets/Logo.png';
+import logo from '../assets/logo-fb.png';
 import familyCrisisCenter from '../assets/familyCrisisCenter.png';
 import home from '../assets/home.png';
 import search from '../assets/search.png';
 import profile from '../assets/profile.png';
 import settings from '../assets/settings.png';
 import Export from '../assets/export.png'; 
-import { useLocation } from 'react-router-dom'
-
+import { useLocation } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
+import SearchIcon from '@mui/icons-material/Search';
+import PersonIcon from '@mui/icons-material/Person';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LogoutIcon from '@mui/icons-material/Logout';
 function Sidebar(){
     // Get the current location using the useLocation hook from react-router-dom
     let location = useLocation();
@@ -38,22 +42,26 @@ function Sidebar(){
     // Otherwise, display the sidebar
     return (
         <div id='sidebar'>
+            <div className='side-logo'>
             <img src={logo} alt='Logo' className='sidebar-link'></img>
-            <img src={familyCrisisCenter} alt='Family Crisis Center' className='fcc-title'></img>
-            <Link to='/' className='link'>
-                <img src={home} alt='Home' className='sidebar-link'></img>
+
+            </div>  
+            <Link to='/dashboard' className='link'>
+                <HomeIcon/><p>Home</p>
+
             </Link>
             <Link to='/search' className='link'>
-                <img src={search} alt='Search' className='sidebar-link'></img>
+                <SearchIcon/><p>Directory</p>
             </Link>
             <Link to='/form' className='link'>
-                <img src={profile} alt='Profile' className='sidebar-link'></img>
+                <PersonIcon/><p>Check-In</p>
             </Link>
-            <Link to='/settings' className='link'>
-                <img src={settings} alt='Settings' className='sidebar-link'></img>
+
+            <Link className='link'>
+                <SettingsIcon/><p>Settings</p>
             </Link>
             <Link onClick={()=>window.location.href='/logout'} className='link'>
-                <img src={Export} alt='Export' className='sidebar-link'></img>
+                <LogoutIcon/><p>Logout</p>
             </Link>
         </div>
     );

@@ -1,3 +1,4 @@
+
 /* Author: Alexander Berryhill, Alexis Rudy
  *
  * This is a React component for a form that allows the user to 
@@ -9,6 +10,7 @@
  * component also imports the Modal component from the react-modal 
  * library and some CSS styles.
  */
+
 
 import React, {useState} from 'react';
 import Modal from 'react-modal';
