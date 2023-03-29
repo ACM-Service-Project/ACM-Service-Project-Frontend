@@ -20,7 +20,7 @@ function Login(){
                     </form>
                     <div className='register_link'>
                         <p>Don't have an account? </p>
-                    <Link to = '/register' className='link' >
+                    <Link to = '/register' className='link-signup' >
                         Sign Up
                     </Link>
                     </div>
