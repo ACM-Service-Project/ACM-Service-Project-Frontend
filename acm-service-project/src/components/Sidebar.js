@@ -36,7 +36,7 @@ function Sidebar(){
             <Link className='link'>
                 <SettingsIcon/><p>Settings</p>
             </Link>
-            <Link className='link'>
+            <Link onClick={()=>window.location.href='/logout'} className='link'>
                 <LogoutIcon/><p>Logout</p>
             </Link>
         </div>
