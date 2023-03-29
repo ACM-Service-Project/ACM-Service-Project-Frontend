@@ -2,7 +2,7 @@
 This is a web app built as a service project for the Food Bank in Rexburg ID called The Family Crisis Center. The Web app keeps track of Patrons visiting the Food bank and the current inventory.
 
 ## Table of Contents
-- [project-name](#family-crisis-center-web-app)
+- [Family Crisis Center](#family-crisis-center-web-app)
     - [Table of Contents](#table-of-contents)
     - [Getting Started](#getting-started)
         - [Installation](#installation)
