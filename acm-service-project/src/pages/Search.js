@@ -1,4 +1,4 @@
-/*Author: Alexander Berryhill
+/* Author: Alexander Berryhill
  * 
  * This component is a React component that includes functions to 
  * search for a patron, check in a patron, edit a patron's information, 

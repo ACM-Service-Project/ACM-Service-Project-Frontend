@@ -5,7 +5,6 @@
  * It uses the useNavigate hook from React Router to perform the redirection.
  */
 
-
 // Import the React library and the useNavigate hook from React Router
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
