@@ -60,7 +60,7 @@ function Register(){ // Define Register component
                         <input type="text" className='input' id='lastname' placeholder='Last Name' name='lastname'/> {/* Input for last name */}
 
                         <label for='phonenumber'>Phone Number</label> {/* Label for phone number input */}
-                        <input type="text" className='input' id='phonenumber' placeholder='phonenumber' name='phonenumber'/> {/* Input for phone number */}
+                        <input type="phone" className='input' id='phonenumber' placeholder='phonenumber' name='phonenumber'/> {/* Input for phone number */}
 
                         <label for='email'>Email</label> {/* Label for email input */}
                         <input type="email" className='input' id='email' placeholder='Email' name='email'/> {/* Input for email */}

@@ -1,11 +1,8 @@
-#sidebar{
-    height: 100vh;
-    width: 300px;
-    background-color: #aa232f;
-}
-
 .sidebar {
-    padding: 30px;
+    height: 100vh;
+    width: 200px;
+    margin: 0%;
+    background-color: #aa232f;
 }
 
 .side-logo{
@@ -38,4 +35,16 @@
   .link:hover{
     background-color: #eaa7ad87;
     transition: all 0.3s ease-in-out;
+  }
+
+  @media only screen and (max-width: 850px) {
+    .sidebar{
+        width: 100px;
+    }
+    .side-logo{
+        margin: 20px;
+    }
+    .link p{
+        display: none;
+    }
   }

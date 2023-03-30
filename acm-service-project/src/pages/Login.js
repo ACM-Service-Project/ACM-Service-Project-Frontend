@@ -55,7 +55,7 @@ function Login(){
                     <p id='title'>FOOD BANK</p>
                     <form onSubmit={handleSubmit}>
                         <input type="text" className='input' id='username' placeholder='Username' name='username'/>
-                        <input type="text" className='input' id='password' placeholder='Password' name='password'/>
+                        <input type="password" className='input' id='password' placeholder='Password' name='password'/>
                         <button type="submit" id='submit'>LOG IN</button>
                     </form>
                     <div className='register_link'>

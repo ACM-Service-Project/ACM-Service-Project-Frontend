@@ -36,7 +36,6 @@ function App() {
 
       <Routes>
         {/* Pages accessible at all times */}
-        <Route path="/" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
 
         {/* Pages only accessed by un-logged in users */}
@@ -47,6 +46,7 @@ function App() {
 
         {/* Pages only accessed by logged-in users */}
         <Route element={<ProtectedRoute isAllowed={!!user} />}>
+          <Route path="/" element={<Dashboard />} />
           <Route path="/search" element={<Search />} />
           <Route path='/form' element={<Form />} />
           <Route path='/directory' element={<Directory />} />
