@@ -35,6 +35,10 @@ function Sidebar(){
                 <img src={profile} alt='Profile' className='profile_img'></img>
                 <a className='sidebar_a' >Directory</a>
             </Link>
+            <Link className='product'>
+                <a className='sidebar_a' >Product</a>  
+            </Link>           
+
             <Link className='link'>
                 <img src={settings} alt='Settings' className='settings_img'></img>
                 <a className='sidebar_a' >Settings</a>  
@@ -43,6 +47,7 @@ function Sidebar(){
                 <img src={Export} alt='Export' className='export_img'></img>
                 <a className='sidebar_a'>Logout</a>
             </Link>
+
         </div>
     );
 }
