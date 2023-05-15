@@ -41,8 +41,9 @@ function Sidebar(){
             <img src={logo} alt='Logo' className='sidebar-link'></img>
 
             </div>  
-            <Link to='/' className='link'>
+            <Link to='/dashboard' className='link'>
                 <HomeIcon/><p>Home</p>
+
             </Link>
             <Link to='/search' className='link'>
                 <SearchIcon/><p>Directory</p>
@@ -51,7 +52,7 @@ function Sidebar(){
                 <PersonIcon/><p>Check-In</p>
             </Link>
 
-            <Link to='/settings' className='link'>
+            <Link className='link'>
                 <SettingsIcon/><p>Settings</p>
             </Link>
             <Link onClick={()=>window.location.href='/logout'} className='link'>
